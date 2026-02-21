@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 });
 
 app.use(cors({
-    origin: true,
+    origin: ['https://notes-vault-3n61kopv1-shubham-thakurs-projects-d475b917.vercel.app', 'https://notesvault.vercel.app', 'http://localhost:5173'],
     credentials: true
 }));
 app.use(express.json());
