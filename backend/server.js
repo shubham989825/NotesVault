@@ -12,6 +12,11 @@ console.log("PORT:", process.env.PORT);
 
 const app = express();
 
+app.use((req, res, next) => {
+    console.log(`${req.method} ${req.path}`);
+    next();
+});
+
 app.use(cors({
     origin: true,
     credentials: true
