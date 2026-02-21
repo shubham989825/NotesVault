@@ -15,8 +15,10 @@ console.log("FRONTEND_URL:", process.env.FRONTEND_URL);
 const app = express();
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:5173',
-    credentials: true
+    origin: ['https://notes-vault-nbw99st1o-shubham-thakurs-projects-d475b917.vercel.app', 'http://localhost:5173'],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
 
