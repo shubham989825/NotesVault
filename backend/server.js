@@ -9,16 +9,12 @@ dotenv.config();
 
 console.log("Environment variables loaded:");
 console.log("PORT:", process.env.PORT);
-console.log("MONGO_URI:", process.env.MONGO_URI ? "Set" : "Not set");
-console.log("FRONTEND_URL:", process.env.FRONTEND_URL);
 
 const app = express();
 
 app.use(cors({
-    origin: ['https://notes-vault-nbw99st1o-shubham-thakurs-projects-d475b917.vercel.app', 'http://localhost:5173'],
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    origin: true,
+    credentials: true
 }));
 app.use(express.json());
 
