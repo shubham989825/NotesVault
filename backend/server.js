@@ -12,6 +12,8 @@ console.log("FRONTEND_URL:", process.env.FRONTEND_URL);
 
 const app = express();
 
+const PORT = process.env.PORT || 10000;
+
 app.use((req, res, next) => {
     console.log(`${req.method} ${req.path}`);
     next();
@@ -30,17 +32,18 @@ app.get("/", (req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/notes", noteRoutes);
 
+app.listen(PORT, () => {
+    console.log(`server is running on ${PORT}`);
+});
+
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
     console.log("Connected To MongoDB");
-    
-    app.listen(process.env.PORT, () => {
-    console.log(`server is running on ${process.env.PORT}`);
-});
 
 })
 .catch((error) => {
     console.log("MongoDb connection Error:", error);
 });
+
  
 export default app;
