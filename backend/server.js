@@ -7,6 +7,11 @@ import noteRoutes from "./routes/note.js";
 
 dotenv.config();
 
+console.log("Environment variables loaded:");
+console.log("PORT:", process.env.PORT);
+console.log("MONGO_URI:", process.env.MONGO_URI ? "Set" : "Not set");
+console.log("FRONTEND_URL:", process.env.FRONTEND_URL);
+
 const app = express();
 
 app.use(cors({
