@@ -1,0 +1,14 @@
+RENDER ENVIRONMENT VARIABLES (Set these ONCE in Render dashboard):
+
+NODE_VERSION = 18
+PORT = 10000
+MONGO_URI = mongodb+srv://shubham_notesvault:shubham0060@cluster2.ipmxzih.mongodb.net/notesvault?retryWrites=true&w=majority
+JWT_SECRET = supersecretkey
+FRONTEND_URL = https://notes-vault-de07g1rc9-shubham-thakurs-projects-d475b917.vercel.app
+
+VERCEL ENVIRONMENT VARIABLE (Set this ONCE in Vercel dashboard):
+
+VITE_API_URL = https://notesvault-ji1u.onrender.com
+
+STOP editing .env files - they don't affect deployment!
+Only change these in the respective dashboards.
