@@ -1,0 +1,177 @@
+/* Dashboard container */
+.dashboard-page {
+  background-image: url(components/image/OIP.jpeg); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(181, 175, 175, 0.711);
+  min-height: 100vh;
+  padding: 20px;
+}
+.dashboard-container {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+/* Titles */
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgb(147, 248, 150);
+}
+
+/* Logout button */
+.logout-button {
+  font-size: medium;
+  text-align: center;
+  display: block;
+  margin: 10px;
+  padding: 10px 16px;
+  background-color: #191414;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  
+}
+.logout-button:hover {
+  background-color: #706d6d;
+}
+
+/* Add note form */
+.add-note-form {
+  margin-bottom: 20px;
+  background-color: rgb(138, 138, 134);
+}
+
+.title-btn {
+  font-size: large;
+  border: 1px solid #d1d1d1;
+  background-color: rgb(254, 246, 237);
+
+}
+
+/* Input & textarea fields */
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+}
+
+.textarea-field {
+  min-height: 80px;
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 8px 16px;
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #72befc;
+}
+
+/* Notes cards */
+.note-card {
+  border: 1px solid rgb(130, 130, 130);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(35, 30, 30);
+  color:white;
+}
+
+/* Delete button */
+.delete-btn {
+  padding: 4px 8px;
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  background-color: #e3a1a0;
+}
+
+.login-page {
+  background-color: rgb(9, 9, 12);
+  background-image: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9naW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60');
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  color:white;
+  align-items: center;
+  ;
+  
+}
+.logo {
+  color:rgb(10, 10, 10);
+  font-size: 32px;
+  margin-bottom: 20px;
+  background-color: rgb(190, 192, 189);
+  width: 300px;
+}
+.email-btn {
+  font-size: medium;
+  border: 1px solid #d1d1d1;
+  background-color: rgb(249, 249, 249);
+  margin: 5px;
+  width: 300px;
+  height: 30px;
+}
+
+.pass-btn {
+  font-size: medium;
+  border: 1px solid #d1d1d1;
+  background-color: rgb(249, 249, 249);
+  margin: 15px;
+  width: 300px;
+  height: 30px;
+}
+.login-button {
+  font-size: medium;
+  border: 1px solid #d1d1d1;
+  background-color: rgb(8, 6, 6);
+  margin: 13px;
+  color: white;;
+  width: 250px;
+  margin-left: 140px;
+  height: 30px;
+}
+.login-button:hover {
+  background-color: rgb(120, 120, 120);
+}
+.Register-page {
+  background-color: rgb(5, 5, 5);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  color:white
+  
+}
+
+.Register-btn {
+  font-size: medium;
+  border: 1px solid #fcf7f7;
+  background-color: rgb(11, 11, 11);
+  margin: 5px;
+  color: rgb(251, 249, 249);;
+}
+.Register-btn:hover {
+  background-color: rgb(120, 120, 120);
+}
+.logo-R {
+  color: rgb(179, 8, 8);
+}
