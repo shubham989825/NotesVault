@@ -16,7 +16,7 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Submitting form:", form); // For debugging
+    console.log("Submitting form:", form);  
 
     try {
       const { data } = await API.post("/auth/login", form);

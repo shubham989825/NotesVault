@@ -26,7 +26,7 @@ router.get("/", protect, async (req, res) => {
 });
 
 
-// 🔹 DELETE NOTE
+ 
 router.delete("/:id", protect, async (req, res) => {
   const note = await Note.findById(req.params.id);
 
